@@ -22,3 +22,7 @@ This tool creates a dictionary using the words found at the specified web addres
 ./vocalive.py -o out_file.txt http://blog.example.com
 ```
 It will create a file named "out_file.txt" in the same folder containing the unique words found in blog.example.com web page. You may specify the minimum length of words using the ```-m``` parameter. If you don't set that, the default length is 2 characters.
+
+
+*Feature requests are very welcome!*
+Please start a new issue on the top right corner of the screen for better organization.
