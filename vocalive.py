@@ -5,7 +5,6 @@ import requests;
 from bs4 import BeautifulSoup;
 import os;
 import sys;
-from unidecode import unidecode;
 # -*- coding: utf-8 -*-
 
 class Manager:
@@ -166,9 +165,7 @@ class Laboratory:
         treated = list();
         for word in string:
             treated.append( self.translate_accents( word ) );
-        #return string.translate( accents );
         return treated;
-        #return unidecode( string );
 
     def translate_accents( self, string ):
         accents = { 
@@ -212,7 +209,6 @@ class Laboratory:
                     ord('\xfb'): ord('u'),
                     ord('\xfc'): ord('u')};
         return string.translate( accents );
-        #return treated;
  
 
     def discard_repetition( self, words ):
