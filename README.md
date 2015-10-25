@@ -1,5 +1,6 @@
-**Live Vocabulary Observer**
+##Live Vocabulary Observer
 
+####Usage
 ```
 usage: vocalive.py [-h] [-m Length] [-o File] Address
 
@@ -24,5 +25,17 @@ This tool creates a dictionary using the words found at the specified web addres
 It will create a file named "out_file.txt" in the same folder containing the unique words found in blog.example.com web page. You may specify the minimum length of words using the ```-m``` parameter. If you don't set that, the default length is 2 characters.
 
 
-**Feature requests are very welcome!**<br>
+##Setup
+
+####Required modules
+A few python modules are required for proper use. Be sure to install <i>argparse</i>, <i>requests</i>, and <i>BeautifulSoup</i>.
+
+```
+pip install argparse 
+pip install requests
+pip install BeautifulSoup
+```
+
+
+####Feature requests are very welcome!
 Please start a new issue on the top right corner of the screen for better organization.
